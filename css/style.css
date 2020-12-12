@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utility class */
+.bg-grey {
+  color: #555;
+}
+
+.font2 {
+  font-size: 1.5rem;
+}
+/* Showcase content */
+#showcase {
+  background: url(../img/mahatma\ gandhi3.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
+  padding: 0 5rem;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+#showcase .l-heading {
+  font-size: 90px;
+  padding-bottom: 0.45rem;
+  line-height: 1.1;
+}
+
+#showcase .lead {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#showcase .btn {
+  display: inline-block;
+  color: white;
+  background: #222;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  width: 6.5rem;
+}
+
+#showcase .btn:hover {
+  color: #222;
+  background: white;
+}
+
+/* Timeline */
+#timeline {
+  background: #333;
+  color: white;
+}
+#timeline h1 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+#timeline .list ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40rem;
+  padding-bottom: 2rem;
+  /* max-width: 960px;
+  margin: auto; */
+}
+
+#timeline .list .item {
+  padding-bottom: 1rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.wiki p {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.wiki p a {
+  color: white;
+  text-decoration: #fff;
+}
+
+.wiki p a:hover {
+  color: wheat;
+}
+/* Footer */
+#footer p {
+  background: black;
+  color: white;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Responsiveness */
+@media (max-width: 500px) {
+  #timeline .list ul {
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  #showcase {
+    background: black;
+    height: 100vh;
+    color: white;
+  }
+
+  #showcase .l-heading {
+    font-size: 50px;
+    padding-bottom: 0.45rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  #timeline .list ul {
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  #showcase {
+    background: black;
+    height: 100vh;
+    color: white;
+  }
+}
